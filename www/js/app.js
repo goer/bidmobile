@@ -66,6 +66,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+  .state('tab.bid', {
+      url: '/bid',
+      views: {
+        'tab-bid': {
+          templateUrl: 'templates/bid.html',
+          controller: 'BidCtrl'
+        }
+      }
+    })
 
   .state('tab.account', {
     url: '/account',

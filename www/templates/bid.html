@@ -1,0 +1,27 @@
+<ion-view view-title="Bid">
+  <ion-content>
+  <h1 align="center">
+  	{{bid.latest_price}} 
+  </h1>
+  <h3 align="center">
+  		by
+  	{{bid.latest_bidder}}
+  </h3>
+  <form ng-submit="sendBid()">
+  <div class="list">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">User</span>
+    <input type="text" placeholder="goer" ng-model="reqbid.user">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Price"</span>
+    <input type="text" placeholder="2000" ng-model="reqbid.price">
+  </label>
+  <button class="button button-block button-positive">
+  	Submit
+	</button>
+  </div>
+  </form>
+
+  </ion-content>
+</ion-view>
